@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Autobid Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Калкулатор за коли от САЩ</h2>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>Курс на долара (лв)</label>
+                    <input type="text" value="1.68" id="usdValue">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>Цена на колата (USD)</label>
+                    <input type="text" id="carValue">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>Мито %</label>
+                    <input type="text" value="10" id="tax0">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>ДДС %</label>
+                    <input type="text" value="20" id="tax1">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>Такси пристанище (USD)</label>
+                    <input type="text" value="400" id="taxBg">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>Доставка в България (ЛВ)</label>
+                    <input type="text" value="350" id="taxShipping">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label>Крайна сума</label>
+                    <input type="text" readonly="readonly" id="total">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
