@@ -23,30 +23,35 @@
     <div id="financialjuice-news-widget-container"></div>
 
     <!-- Place this script before closing body -->
-    <script type="text/javascript">
-        var jo = document.createElement("script");
-        jo.type = "text/javascript";
-        jo.id = "FJ-Widgets";
-
-        var r = Math.floor(Math.random() * 10000);
-
-        jo.src = "https://protect.checkpoint.com/v2/r02/___https://feed.financialjuice.com/widgets/widgets.js?r=___.YzJlOnRiaWJhbms6YzpvOmYzMGQyNTMzZDg3M2E2Y2JmNTg4ODc1ZDcyM2JkZmU0Ojc6ZDk2OTo1Y2JjMjdhNzI4MTFhZDVmMTI0MjM4M2UwMWRiYTZjMjZiN2MzYzRjOGQxYjhhMzhmNjJlY2I1ZjVkYjUyMWQwOnA6VDpG" + r;
-
-        jo.onload = function () {
-            var options = {};
-            options.container = "financialjuice-news-widget-container";
-            options.mode = "Dark";
-            options.width = "500px";
-            options.height = "600px";
-            options.backColor = "1e222d";
-            options.fontColor = "b2b5be";
-            options.widgetType = "NEWS";
-
-            new window.FJWidgets.createWidget(options);
-        };
-
-        document.head.appendChild(jo);
-    </script>
+    
 
 </body>
+
+<script type="text/javascript">
+    var jo = document.createElement("script");
+    jo.type = "text/javascript";
+    jo.id = "FJ-Widgets";
+
+    var r = Math.floor(Math.random() * 10000);
+
+    jo.src = "https://protect.checkpoint.com/v2/r02/___https://feed.financialjuice.com/widgets/widgets.js?r=___.YzJlOnRiaWJhbms6YzpvOmYzMGQyNTMzZDg3M2E2Y2JmNTg4ODc1ZDcyM2JkZmU0Ojc6ZDk2OTo1Y2JjMjdhNzI4MTFhZDVmMTI0MjM4M2UwMWRiYTZjMjZiN2MzYzRjOGQxYjhhMzhmNjJlY2I1ZjVkYjUyMWQwOnA6VDpG" + r;
+
+    jo.onload = function () {
+        var options = {};
+        options.container = "financialjuice-news-widget-container";
+        options.mode = "Dark";
+        options.width = "500px";
+        options.height = "600px";
+        options.backColor = "1e222d";
+        options.fontColor = "b2b5be";
+        options.widgetType = "NEWS";
+
+        new window.FJWidgets.createWidget(options);
+    };
+
+    document.head.appendChild(jo);
+
+    console.log("script executed!");
+</script>
+
 </html>
