@@ -1,65 +1,36 @@
 <html>
 
 <head>
-    <title>Autobid Calculator</title>
-
-    <link rel="stylesheet" href="calculator.css">
-    <script src="calculator.js"></script>
 </head>
 
+
 <body>
-    <div class="card">
-        <h2>Калкулатор за коли от САЩ</h2>
-        <div class="row">
-            <div class="col">
-                <div class="form-group">
-                    <label>Курс на долара (лв)</label>
-                    <input type="text" value="1.68" id="usdValue">
-                </div>
-            </div>
 
-            <div class="col">
-                <div class="form-group">
-                    <label>Цена на колата (USD)</label>
-                    <input type="text" id="carValue">
-                </div>
-            </div>
+<!-- FinancialJuice Widget-->
+<div id="financialjuice-news-widget-container"  >Here</div>
+<!--Place this script after </body> -->
 
-            <div class="col">
-                <div class="form-group">
-                    <label>Мито %</label>
-                    <input type="text" value="10" id="tax0">
-                </div>
-            </div>
 
-            <div class="col">
-                <div class="form-group">
-                    <label>ДДС %</label>
-                    <input type="text" value="20" id="tax1">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group">
-                    <label>Такси пристанище (USD)</label>
-                    <input type="text" value="400" id="taxBg">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group">
-                    <label>Доставка в България (ЛВ)</label>
-                    <input type="text" value="350" id="taxShipping">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="form-group">
-                    <label>Крайна сума</label>
-                    <input type="text" readonly="readonly" id="total">
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
+
+<script type="text/javascript">
+    var jo = document.createElement("script");
+    jo.type = "text/javascript";
+    jo.id= "FJ-Widgets";
+    var r = Math.floor(Math.random() * (9999 - 0 + 1) + 0);
+    jo.src = "https://protect.checkpoint.com/v2/r02/___https://feed.financialjuice.com/widgets/widgets.js?r=___.YzJlOnRiaWJhbms6YzpvOmYzMGQyNTMzZDg3M2E2Y2JmNTg4ODc1ZDcyM2JkZmU0Ojc6ZDk2OTo1Y2JjMjdhNzI4MTFhZDVmMTI0MjM4M2UwMWRiYTZjMjZiN2MzYzRjOGQxYjhhMzhmNjJlY2I1ZjVkYjUyMWQwOnA6VDpG" + r + "";
+    jo.onload = function(){
+    var options = {};
+     options.container = "financialjuice-news-widget-container";
+    options.mode = "Dark";
+    options.width= "500px";
+    options.height= "600px";
+    options.backColor= "1e222d";
+    options.fontColor= "b2b5be";
+    options.widgetType= "NEWS";
+   new window.FJWidgets.createWidget(options);
+        }
+     document.getElementsByTagName("head")[0].appendChild(jo);
+</script>
+
 </html>
